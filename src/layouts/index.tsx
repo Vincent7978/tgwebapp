@@ -9,7 +9,7 @@ export default function Layout() {
         // @ts-ignore
         window.Telegram.WebApp.ready();
         console.log("===================");
-        console.log(Telegram.WebApp);
+        // console.log(Telegram.WebApp);
         console.log(window.Telegram.WebApp);
         console.log("===================");
         // @ts-ignore
