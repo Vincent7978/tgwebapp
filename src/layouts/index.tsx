@@ -7,7 +7,7 @@ export default function Layout() {
 
     useEffect(()=>{
         // @ts-ignore
-        Telegram.WebApp.ready();
+        window.Telegram.WebApp.ready();
         console.log("===================");
         console.log(Telegram.WebApp);
         console.log(window.Telegram.WebApp);
