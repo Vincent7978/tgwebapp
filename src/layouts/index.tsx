@@ -7,11 +7,11 @@ export default function Layout() {
 
     useEffect(()=>{
         // @ts-ignore
-        window.Telegram.WebApp.ready();
+        Telegram.WebApp.ready();
         // @ts-ignore
-        document.getElementById("name").innerHTML = "your name is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.first_name
+        // document.getElementById("name").innerHTML = "your name is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.first_name
         // @ts-ignore
-        document.getElementById("id").innerHTML = "your id is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.id
+        // document.getElementById("id").innerHTML = "your id is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.id
     })
 
   return (
