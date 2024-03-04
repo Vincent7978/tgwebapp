@@ -8,6 +8,8 @@ export default function Layout() {
     useEffect(()=>{
         // @ts-ignore
         Telegram.WebApp.ready();
+        console.log(Telegram.WebApp);
+        console.log(window.Telegram.WebApp);
         // @ts-ignore
         // document.getElementById("name").innerHTML = "your name is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.first_name
         // @ts-ignore
