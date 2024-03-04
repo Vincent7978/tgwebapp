@@ -13,9 +13,10 @@ export default function Layout() {
         console.log(window.Telegram.WebApp);
         console.log("===================");
         // @ts-ignore
-        // document.getElementById("name").innerHTML = "your name is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.first_name
+        document.getElementById("name").innerHTML = "your name is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.first_name
         // @ts-ignore
-        // document.getElementById("id").innerHTML = "your id is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.id
+        document.getElementById("id").innerHTML = "your id is: " + window.Telegram?.WebApp?.initDataUnsafe?.user?.id
+        document.getElementById("tg").innerHTML =  JSON.stringify(window.Telegram?.WebApp);
     })
 
   return (
@@ -31,7 +32,7 @@ export default function Layout() {
           <Link to="/docs">Docs</Link>
         </li>
         <li>
-          <a href="https://github.com/umijs/umi">Github</a>
+          <a href="https://github.com/umijs/umi">Github11</a>
         </li>
       </ul>
       <Outlet />
@@ -47,6 +48,8 @@ export default function Layout() {
         <p id="id"></p>
         <br/>
         <p id="valid">unchecked</p>
+        <br/>
+        <p id="tg"></p>
     </div>
   );
 }
