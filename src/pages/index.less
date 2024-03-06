@@ -1,9 +1,41 @@
+//.content {
+//  height: 120px;
+//  color: #ffffff;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  font-size: 48px;
+//  user-select: none;
+//}
+
 .content {
   height: 120px;
-  color: #ffffff;
+  color: #999999;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
+  font-size: 24px;
   user-select: none;
+}
+
+.root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  flex: 0;
+  border-bottom: solid 1px var(--adm-color-border);
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomNavTab {
+  flex: 0;
+  border-top: solid 1px var(--adm-color-border);
 }
