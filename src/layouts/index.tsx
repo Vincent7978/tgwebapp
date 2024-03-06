@@ -24,7 +24,7 @@ export default function Layout() {
         <Helmet>
             <script src="https://telegram.org/js/telegram-web-app.js"/>
         </Helmet>
-        <ul>
+{/*         <ul>
             <li>
                 <Link to="/">Home</Link>
             </li>
@@ -34,9 +34,10 @@ export default function Layout() {
         <li>
           <a href="https://github.com/umijs/umi">Github11</a>
         </li>
-      </ul>
+      </ul> */}
+        <Link to="/"></Link>
       <Outlet />
-        Hey there :)
+{/*         Hey there :)
         This is a VERY basic example of a webapp.
 
         <br/>
@@ -49,7 +50,7 @@ export default function Layout() {
         <br/>
         <p id="valid">unchecked</p>
         <br/>
-        <p id="tg"></p>
+        <p id="tg"></p> */}
     </div>
   );
 }
