@@ -19,7 +19,7 @@ const images = [
 <style scoped>
 
 .warp{
-  height: 128px;
+  height: 288px;
   background: #2c3e50;
 }
 
