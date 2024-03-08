@@ -5,9 +5,11 @@ import HomeBanner from '@/components/home/HomeBanner.vue'
 import WorkView from '@/views/WorkView.vue'
 import MineView from '@/views/MineView.vue'
 const activeTab = ref('home');
+
 </script>
 
 <template>
+  <div class="tab-warp">
     <Tabs v-model:active="activeTab" sticky swipeable>
       <Tab title="首页" name="home">
         <HomeBanner/>
@@ -19,6 +21,7 @@ const activeTab = ref('home');
         <MineView/>
       </Tab>
     </Tabs>
+  </div>
 </template>
 
 sty
