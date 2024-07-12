@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@vant/area-data": "^1.5.1",
     "vant": "^4.8.5",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"

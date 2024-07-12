@@ -6,7 +6,7 @@
   margin: 0 auto;
   /*padding: 1rem;*/
   font-weight: normal;
-  background: var(--color-background-soft);;
+  background: var(--color-background-soft);
 }
 
 a,
@@ -38,5 +38,5 @@ a,
 
 .tab-warp{
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }

@@ -7,16 +7,24 @@ const images = [
 </script>
 
 <template>
-  <div class="warp">
-    <van-swipe :autoplay="3000" lazy-render>
+  <div>
+    <van-swipe class="my-swipe" :autoplay="4000" lazy-render>
       <van-swipe-item v-for="image in images" :key="image">
-        <Image :src="image" alt="" fit="contain"/>
+        <Image :src="image" alt="" fit="cover" style="height: 288px;"/>
       </van-swipe-item>
     </van-swipe>
   </div>
 </template>
 
 <style scoped>
+
+.my-swipe .van-swipe-item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+    background-color: #39a9ed;
+  }
 
 .warp{
   height: 288px;
